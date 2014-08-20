@@ -1,24 +1,23 @@
 ---
-name: Date-Holidays-Abstract
-version: 0.05
+abstract: 'abstract class for Date::Holidays::* modules'
 author:
-  - 'Jonas B. Nielsen, <jonasbn@cpan.org>'
-abstract: an abstract class for Date::Holidays::* modules
-license: artistic
-resources:
-  license: http://opensource.org/licenses/artistic-license.php
+  - 'Jonas B. Nielsen <jonasbn@cpan.org>'
+build_requires: {}
+configure_requires:
+  ExtUtils::MakeMaker: 0
+dynamic_config: 0
+generated_by: 'Dist::Zilla version 5.020, CPAN::Meta::Converter version 2.142060'
+license: artistic_2
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4
+name: Date-Holidays-Abstract
 requires:
   Class::Virtual: 0
   Test::Harness: 0
   Test::More: 0
-provides:
-  Date::Holidays::Abstract:
-    file: lib/Date/Holidays/Abstract.pm
-    version: 0.05
-no_index:
-  directory:
-    - t
-generated_by: Module::Build version 0.2806
-meta-spec:
-  url: http://module-build.sourceforge.net/META-spec-v1.2.html
-  version: 1.2
+  perl: 5.006
+resources:
+  homepage: http://search.cpan.org/dist/Date-Holidays-Abstract/
+  repository: git://github.com/gitpan/Date-Holidays-Abstract.git
+version: 0.06

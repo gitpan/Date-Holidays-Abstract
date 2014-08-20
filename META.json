@@ -1,0 +1,49 @@
+{
+   "abstract" : "abstract class for Date::Holidays::* modules",
+   "author" : [
+      "Jonas B. Nielsen, <jonasbn@cpan.org>"
+   ],
+   "dynamic_config" : 1,
+   "generated_by" : "Module::Build version 0.4205",
+   "license" : [
+      "artistic_1"
+   ],
+   "meta-spec" : {
+      "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
+      "version" : "2"
+   },
+   "name" : "Date-Holidays-Abstract",
+   "no_index" : {
+      "directory" : [
+         "t"
+      ]
+   },
+   "prereqs" : {
+      "configure" : {
+         "requires" : {
+            "Module::Build" : "0.42"
+         }
+      },
+      "runtime" : {
+         "requires" : {
+            "Class::Virtual" : "0",
+            "Test::Harness" : "0",
+            "Test::More" : "0",
+            "perl" : "v5.6.0"
+         }
+      }
+   },
+   "release_status" : "stable",
+   "resources" : {
+      "bugtracker" : {
+         "web" : "http://rt.cpan.org/NoAuth/Bugs.html?Dist=Date-Holidays-Abstract"
+      },
+      "license" : [
+         "http://www.perlfoundation.org/artistic_license_1_0"
+      ],
+      "repository" : {
+         "url" : "https://github.com/jonasbn/Date-Holidays-Abstract"
+      }
+   },
+   "version" : "0.05"
+}
