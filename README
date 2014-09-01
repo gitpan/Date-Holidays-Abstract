@@ -1,9 +1,9 @@
 
 
 This archive contains the distribution Date-Holidays-Abstract,
-version 0.06:
+version 0.07:
 
-  abstract class for Date::Holidays::* modules
+  abstract class for Date::Holidays::* packages
 
 This software is Copyright (c) 2014 by Jonas B. Nielsen.
 

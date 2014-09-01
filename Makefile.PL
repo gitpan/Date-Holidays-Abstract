@@ -10,21 +10,31 @@ use ExtUtils::MakeMaker ;
 
 
 my %WriteMakefileArgs = (
-  "ABSTRACT" => "abstract class for Date::Holidays::* modules",
+  "ABSTRACT" => "abstract class for Date::Holidays::* packages",
   "AUTHOR" => "Jonas B. Nielsen <jonasbn\@cpan.org>",
+  "BUILD_REQUIRES" => {
+    "Module::Build" => "0.30"
+  },
   "CONFIGURE_REQUIRES" => {
-    "ExtUtils::MakeMaker" => 0
+    "ExtUtils::MakeMaker" => 0,
+    "Module::Build" => "0.30"
   },
   "DISTNAME" => "Date-Holidays-Abstract",
   "EXE_FILES" => [],
   "LICENSE" => "artistic_2",
   "NAME" => "Date::Holidays::Abstract",
   "PREREQ_PM" => {
-    "Class::Virtual" => 0,
+    "Class::Virtually::Abstract" => 0,
     "Test::Harness" => 0,
     "Test::More" => 0
   },
-  "VERSION" => "0.06",
+  "TEST_REQUIRES" => {
+    "File::Spec" => 0,
+    "IO::Handle" => 0,
+    "IPC::Open3" => 0,
+    "Test::More" => 0
+  },
+  "VERSION" => "0.07",
   "test" => {
     "TESTS" => "t/*.t"
   }
@@ -32,7 +42,11 @@ my %WriteMakefileArgs = (
 
 
 my %FallbackPrereqs = (
-  "Class::Virtual" => 0,
+  "Class::Virtually::Abstract" => 0,
+  "File::Spec" => 0,
+  "IO::Handle" => 0,
+  "IPC::Open3" => 0,
+  "Module::Build" => "0.30",
   "Test::Harness" => 0,
   "Test::More" => 0
 );
